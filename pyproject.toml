@@ -104,17 +104,8 @@ pytest-cov = "*"
 [tool.pixi.feature.test.tasks]
 test = "pytest --doctest-modules"
 
-[tool.pixi.feature.py39.dependencies]
-python = "3.9.*"
-
-[tool.pixi.feature.py310.dependencies]
-python = "3.10.*"
-
-[tool.pixi.feature.py311.dependencies]
-python = "3.11.*"
-
 [tool.pixi.feature.py312.dependencies]
-python = "3.12.*"
+python = "3.12.9"
 
 [tool.pixi.feature.py313.dependencies]
 python = "3.13.*"
