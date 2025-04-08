@@ -72,11 +72,7 @@ flexcache = { path = ".", editable = true }
 lint = { features = ["lint"], no-default-feature = true }
 build = { features = ["build"], no-default-feature = true }
 test = { features = ["test"], solve-group = "default" }
-test-py39 = ["test", "py39"]
-test-py310 = ["test", "py310"]
-test-py311 = ["test", "py311"]
 test-py312 = ["test", "py312"]
-test-py313 = ["test", "py313"]
 
 [tool.pixi.feature.lint.dependencies]
 pre-commit = "*"
@@ -106,6 +102,3 @@ test = "pytest --doctest-modules"
 
 [tool.pixi.feature.py312.dependencies]
 python = "3.12.9"
-
-[tool.pixi.feature.py313.dependencies]
-python = "3.13.*"
